@@ -2042,10 +2042,7 @@ try:
         # QUIT
         # ==============================================================
 
-        if (
-            cv2.waitKey(1) & 0xFF
-            == ord("q")
-        ):
+        if cv2.waitKey(1) & 0xFF in (ord("q"), ord("Q")):
 
             break
 
